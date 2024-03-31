@@ -5,9 +5,13 @@
 #ifndef ASSIGNMENT4_ELEPHANT_H
 #define ASSIGNMENT4_ELEPHANT_H
 
+#include "Animal.h"
 
-class Elephant {
-
+class Elephant : public Animal {
+protected:
+    int trunkLength;
+public:
+    int getTrunkLength() const { return this->trunkLength; }
 };
 
 

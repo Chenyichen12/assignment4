@@ -7,7 +7,19 @@
 
 
 class Animal {
+protected:
+    int foodCap;
 
+    int weight;
+    int eatenFood;
+public:
+    int getFoodCap() const { return this->foodCap; }
+
+    int eatFood(int amount);
+
+    int getWeight() const { return this->weight; }
+
+    Animal(int weight, int foodCap);
 };
 
 

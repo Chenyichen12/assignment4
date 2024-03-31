@@ -5,9 +5,13 @@
 #ifndef ASSIGNMENT4_GIRAFFE_H
 #define ASSIGNMENT4_GIRAFFE_H
 
+#include "Animal.h"
 
-class Giraffe {
-
+class Giraffe : public Animal {
+protected:
+    int neckLength;
+public:
+    int getNeckLength() const { return neckLength; }
 };
 
 

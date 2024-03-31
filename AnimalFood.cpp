@@ -3,3 +3,15 @@
 //
 
 #include "AnimalFood.h"
+
+AnimalFood::AnimalFood(FoodType type, int amount) {
+    this->type = type;
+    this->amount = amount;
+}
+
+bool AnimalFood::sell(int am) {
+    if(am>this->amount)
+        return false;
+    this->amount -= am;
+    return true;
+}
