@@ -20,6 +20,8 @@ public:
     int getWeight() const { return this->weight; }
 
     Animal(int weight, int foodCap);
+
+    virtual int showLength() = 0;
 };
 
 

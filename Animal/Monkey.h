@@ -11,8 +11,7 @@ class Monkey : public Animal {
 protected:
     int armLength;
 public:
-    int getArmLength() const { return armLength; }
-
+    int showLength() override { return this->armLength; }
 };
 
 

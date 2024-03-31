@@ -3,3 +3,15 @@
 //
 
 #include "Person.h"
+
+#include <utility>
+
+Person::Person() {
+    this->name = "undefined";
+    this->age = 18;
+}
+
+Person::Person(std::string s, int age) {
+    this->name = std::move(s);
+    this->age = age;
+}

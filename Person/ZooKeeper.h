@@ -5,9 +5,20 @@
 #ifndef ASSIGNMENT4_ZOOKEEPER_H
 #define ASSIGNMENT4_ZOOKEEPER_H
 
-
-class ZooKeeper {
-
+#include "Person.h"
+#include "../Zoo.h"
+#include "../AnimalEnclosure.h"
+#include "iostream"
+#include "vector"
+#include "list"
+class ZooKeeper: public Person {
+protected:
+    int workDay = 0;
+    std::vector<AnimalEnclosure> manage;
+    std::list<std::pair<AnimalEnclosure*,int>> openDate;
+public:
+    void cleanEnclosure();
+    bool ifRun()const{return this->workDay>=10;}
 };
 
 

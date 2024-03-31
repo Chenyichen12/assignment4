@@ -11,7 +11,7 @@ class Giraffe : public Animal {
 protected:
     int neckLength;
 public:
-    int getNeckLength() const { return neckLength; }
+    int showLength() override { return this->neckLength; }
 };
 
 

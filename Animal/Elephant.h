@@ -11,7 +11,7 @@ class Elephant : public Animal {
 protected:
     int trunkLength;
 public:
-    int getTrunkLength() const { return this->trunkLength; }
+    int showLength() override{return this->trunkLength;}
 };
 
 

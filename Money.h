@@ -20,6 +20,7 @@ public:
     float getCurrentDollar();
     int getCurrentFen();
 
+
     void changePrice(int fen);
 };
 

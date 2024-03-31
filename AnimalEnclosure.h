@@ -26,7 +26,11 @@ public:
 
     bool ifOverDirt() { return this->dirtLevel > 2000; };
 
-    void feedFood(int amoint);
+    void clearAllDirt(){this->dirtLevel = 0;}
+    void feedFood(int amount);
+    ~AnimalEnclosure(){delete this->animal; this->animal = nullptr;}
+
+    void changeEnclosureState(ClosureState closureState){ this->state = closureState;}
 };
 
 
