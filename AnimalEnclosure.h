@@ -31,6 +31,8 @@ public:
     ~AnimalEnclosure(){delete this->animal; this->animal = nullptr;}
 
     void changeEnclosureState(ClosureState closureState){ this->state = closureState;}
+
+
 };
 
 

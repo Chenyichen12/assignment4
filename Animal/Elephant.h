@@ -12,6 +12,8 @@ protected:
     int trunkLength;
 public:
     int showLength() override{return this->trunkLength;}
+    explicit Elephant(int length);
+
 };
 
 

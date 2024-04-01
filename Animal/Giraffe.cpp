@@ -3,3 +3,7 @@
 //
 
 #include "Giraffe.h"
+
+Giraffe::Giraffe(int length): Animal(700,500) {
+    this->neckLength = length;
+}

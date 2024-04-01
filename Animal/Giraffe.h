@@ -12,6 +12,7 @@ protected:
     int neckLength;
 public:
     int showLength() override { return this->neckLength; }
+    explicit Giraffe(int length);
 };
 
 

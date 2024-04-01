@@ -3,3 +3,7 @@
 //
 
 #include "Monkey.h"
+
+Monkey::Monkey(int length) : Animal(70,300) {
+    this->armLength = length;
+}

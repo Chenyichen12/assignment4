@@ -3,3 +3,7 @@
 //
 
 #include "Elephant.h"
+
+Elephant::Elephant(int length) : Animal(2000,750){
+    this->trunkLength = length;
+}
