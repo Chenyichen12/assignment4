@@ -4,8 +4,10 @@
 
 #include "AnimalFood.h"
 
+#include <utility>
+
 AnimalFood::AnimalFood(FoodType type, int amount) {
-    this->type = type;
+    this->type = std::move(type);
     this->amount = amount;
 }
 
@@ -15,3 +17,4 @@ bool AnimalFood::sell(int am) {
     this->amount -= am;
     return true;
 }
+

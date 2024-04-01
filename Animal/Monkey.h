@@ -12,7 +12,10 @@ protected:
     int armLength;
 public:
     int showLength() override { return this->armLength; }
+
     explicit Monkey(int length);
+
+    FoodType getType() override { return Banana; }
 };
 
 

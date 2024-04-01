@@ -13,7 +13,7 @@ protected:
 public:
     int showLength() override{return this->trunkLength;}
     explicit Elephant(int length);
-
+    FoodType getType() override{return Peanut;}
 };
 
 

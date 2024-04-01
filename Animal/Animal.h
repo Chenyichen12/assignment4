@@ -5,7 +5,7 @@
 #ifndef ASSIGNMENT4_ANIMAL_H
 #define ASSIGNMENT4_ANIMAL_H
 
-
+#include "../AnimalFood.h"
 class Animal {
 protected:
     int foodCap;
@@ -13,6 +13,7 @@ protected:
     int weight;
     int eatenFood;
 public:
+    virtual FoodType getType() = 0;
     int getFoodCap() const { return this->foodCap; }
 
     int eatFood(int amount);

@@ -17,6 +17,7 @@ public:
 
     friend Money operator-(Money &m1, Money &m2);
 
+    Money operator*(int amount);
     float getCurrentDollar();
     int getCurrentFen();
 

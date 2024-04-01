@@ -36,3 +36,7 @@ int Money::getCurrentFen() {
 void Money::changePrice(int fen) {
     this->current = fen;
 }
+
+Money Money::operator*(int amount) {
+    return Money(amount * this->current);
+}

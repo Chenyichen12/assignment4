@@ -13,6 +13,7 @@ protected:
     bool isStop = false;
     std::string stopRes;
     ZooKeeper *keeper;
+
 public:
     Zoo();
 
