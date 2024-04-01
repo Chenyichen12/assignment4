@@ -15,6 +15,9 @@ protected:
 public:
     void getFood(AnimalFood&&);
     void feedAnimal(Animal*,int amo);
+
+    Child(const std::string &name, int age, const std::string &id);
+    Child();
 };
 
 

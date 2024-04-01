@@ -20,6 +20,8 @@ public:
     bool ifStop() { return this->isStop; }
 
     std::string stopReason() { return this->stopRes; }
+
+    void simOneDay();
     ~Zoo();
 };
 

@@ -21,3 +21,10 @@ Zoo::Zoo() {
 Zoo::~Zoo() {
     delete this->keeper;
 }
+
+void Zoo::simOneDay() {
+    if (this->isStop)
+        return;
+    this->openDay++;
+
+}

@@ -17,6 +17,9 @@ public:
     bool buy(AnimalFood,int amount);
 
     Adult(const std::string &name, int age, const std::string &id, const Money &balance, const std::list<Child> &child);
+
+    Adult(const std::string &name, int age, const std::string &id);
+    Adult();
 };
 
 
