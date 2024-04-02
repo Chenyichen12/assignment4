@@ -2,8 +2,7 @@
 // Created by chen_yichen on 2024/3/26.
 //
 
-#ifndef ASSIGNMENT4_ELEPHANT_H
-#define ASSIGNMENT4_ELEPHANT_H
+#pragma once
 
 #include "Animal.h"
 
@@ -17,4 +16,3 @@ public:
 };
 
 
-#endif //ASSIGNMENT4_ELEPHANT_H

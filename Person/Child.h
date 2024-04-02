@@ -1,24 +1,19 @@
 //
 // Created by chen_yichen on 2024/3/26.
 //
-
-#ifndef ASSIGNMENT4_CHILD_H
-#define ASSIGNMENT4_CHILD_H
+#pragma once
 
 #include "Visitor.h"
 #include "list"
 #include "../AnimalFood.h"
-#include "../Animal/Animal.h"
+#include "../AnimalEnclosure.h"
 class Child: public Visitor{
 protected:
     std::list<AnimalFood> foods;
 public:
     void getFood(AnimalFood&&);
-    void feedAnimal(Animal*,int amo);
+    void feedAnimal(AnimalEnclosure*);
 
     Child(const std::string &name, int age, const std::string &id);
     Child();
 };
-
-
-#endif //ASSIGNMENT4_CHILD_H

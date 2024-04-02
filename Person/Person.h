@@ -1,10 +1,7 @@
 //
 // Created by chen_yichen on 2024/3/26.
 //
-
-#ifndef ASSIGNMENT4_PERSON_H
-#define ASSIGNMENT4_PERSON_H
-
+#pragma once
 #include "iostream"
 class Person {
 protected:
@@ -15,5 +12,3 @@ public:
     Person(std::string name,int age);
 };
 
-
-#endif //ASSIGNMENT4_PERSON_H

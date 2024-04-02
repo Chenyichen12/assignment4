@@ -2,18 +2,25 @@
 // Created by chen_yichen on 2024/3/26.
 //
 
-#ifndef ASSIGNMENT4_ZOO_H
-#define ASSIGNMENT4_ZOO_H
+#pragma once
 
 #include "iostream"
-#include "Person/ZooKeeper.h"
+#include "vector"
+#include "list"
+class ZooKeeper;
+class FoodSeller;
+class AnimalEnclosure;
 class Zoo {
 protected:
     int openDay = 0;
     bool isStop = false;
     std::string stopRes;
     ZooKeeper *keeper;
+    FoodSeller *seller;
+    std::vector<std::shared_ptr<AnimalEnclosure>> closures;
 
+    int adNum = 0;
+    int childNum = 0;
 public:
     Zoo();
 
@@ -23,7 +30,6 @@ public:
 
     void simOneDay();
     ~Zoo();
+    std::list<std::shared_ptr<AnimalEnclosure>> getOpenClosure();
+    std::tuple<bool,std::string> checkClose();
 };
-
-
-#endif //ASSIGNMENT4_ZOO_H

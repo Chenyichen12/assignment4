@@ -1,10 +1,4 @@
-//
-// Created by chen_yichen on 2024/3/26.
-//
-
-#ifndef ASSIGNMENT4_ANIMAL_H
-#define ASSIGNMENT4_ANIMAL_H
-
+#pragma once
 #include "../AnimalFood.h"
 class Animal {
 protected:
@@ -24,6 +18,3 @@ public:
 
     virtual int showLength() = 0;
 };
-
-
-#endif //ASSIGNMENT4_ANIMAL_H

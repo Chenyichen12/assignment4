@@ -1,26 +1,24 @@
 //
 // Created by chen_yichen on 2024/3/26.
 //
-
-#ifndef ASSIGNMENT4_FOODSELLER_H
-#define ASSIGNMENT4_FOODSELLER_H
+#pragma once
 
 #include "iostream"
 #include "list"
 #include "../AnimalFood.h"
 #include "Adult.h"
 
-class FoodSeller {
+class FoodSeller : public Person {
 protected:
     Money balance;
-    std::list<std::unique_ptr<AnimalFood>> foods;
+    std::list<AnimalFood> foods;
 public:
-    bool sellFood(int amount, const FoodType& type);
-    std::tuple<bool,FoodType> ifSellOut();
-    FoodSeller();
+    bool sellFood(int amount, const FoodType &type);
 
-    std::list<FoodType> getSellerFood();
+    std::tuple<bool, FoodType> ifSellOut();
+
+    FoodSeller(const std::string&, int);
+
+    std::list<AnimalFood> getSellerFood(){return this->foods;}
 };
 
-
-#endif //ASSIGNMENT4_FOODSELLER_H

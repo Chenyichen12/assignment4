@@ -20,11 +20,11 @@ void Child::getFood(AnimalFood &&food) {
     }
 }
 
-void Child::feedAnimal(Animal *ani, int amo) {
-    auto type = ani->getType();
+void Child::feedAnimal(AnimalEnclosure *ani) {
+    auto type = ani->getAnimal()->getType();
     for (auto &item: this->foods) {
         if (item.getType() == type) {
-            ani->eatFood(item.getAmount());
+            ani->feedFood(item.getAmount());
         }
     }
 }
